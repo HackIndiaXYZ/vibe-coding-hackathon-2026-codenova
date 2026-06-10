@@ -1,0 +1,29 @@
+FREELANCE DEVELOPER AGREEMENT
+
+This Freelance Developer Agreement (the "Agreement") is made on this 10th day of June 2026, by and between:
+
+Solvify Tech Solutions, having its principal place of business at Chennai, Tamil Nadu, India (hereinafter referred to as the "Client"), of the One Part;
+
+AND
+
+Kabir Das, residing at Chennai, Tamil Nadu, India (hereinafter referred to as the "Developer"), of the Other Part.
+
+1. SCOPE OF WORK & REVISIONS
+The Developer shall build the mobile application as per the specifications in Annexure A. The Developer agrees to make all necessary revisions and modifications requested by the Client until final approval is obtained.
+
+2. MILESTONE PAYMENTS
+The total project fee is INR 1,50,000, payable in three milestones: 20% advance, 40% on beta delivery, and 40% on final App Store launch. Payments shall be made within 30 days of invoice receipt.
+
+3. INTELLECTUAL PROPERTY RIGHTS
+Upon creation of any code, graphic, or design in connection with this project, all intellectual property rights and copyrights shall instantly vest in the Client, who shall have the sole right to modify and publish the same.
+
+4. DELAY PENALTY
+Time is of the essence in this agreement. If the Developer fails to deliver the final application by the agreed deadline of August 15, 2026, the Developer shall pay a late penalty of INR 2,000 per day of delay to the Client.
+
+IN WITNESS WHEREOF, the parties hereto have signed this Agreement.
+
+Solvify Tech Solutions
+Client
+
+Kabir Das
+Developer

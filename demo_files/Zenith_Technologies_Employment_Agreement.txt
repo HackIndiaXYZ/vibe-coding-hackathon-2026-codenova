@@ -1,0 +1,36 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement (the "Agreement") is made and entered into on this 1st day of June 2026, by and between:
+
+Zenith Technologies Private Limited, a company incorporated under the Companies Act, 2013, having its registered office at Bengaluru, Karnataka, India (hereinafter referred to as the "Employer"), of the First Part;
+
+AND
+
+Aarav Sharma, residing at Bengaluru, Karnataka, India (hereinafter referred to as the "Employee"), of the Second Part.
+
+1. POSITION AND REMUNERATION
+The Employee shall be employed in the position of Senior Software Engineer.
+The Employee shall receive a consolidated gross salary of INR 18,00,000 per annum, paid monthly in arrears after applicable statutory deductions like TDS, EPF, and Professional Tax.
+
+2. INTELLECTUAL PROPERTY ASSIGNMENT
+All inventions, software, designs, and patents developed, conceived, or reduced to practice by the Employee during the term of employment, whether or not during office hours or using Employer resources, shall be the sole and exclusive property of the Employer.
+
+3. NOTICE PERIOD & TERMINATION
+The Employer may terminate this Agreement at any time by giving fifteen (15) days written notice or salary in lieu thereof. The Employee may terminate this Agreement only by providing ninety (90) days prior written notice.
+
+4. POST-EMPLOYMENT NON-COMPETE
+For a period of twenty-four (24) months following the termination of employment for any reason, the Employee shall not directly or indirectly engage, work, consult, or associate with any competitor or similar technology business operating within the territory of India.
+
+5. TRAINING COSTS RECOVERY
+In the event the Employee terminates this agreement within twelve (12) months of commencement, the Employee shall pay a fixed sum of INR 2,00,000 as liquidated damages to compensate the Employer for training and onboarding expenses.
+
+6. DISPUTE RESOLUTION
+Any dispute arising out of this Agreement shall be referred to arbitration in accordance with the Arbitration and Conciliation Act, 1996. The seat and venue of arbitration shall be Bengaluru, Karnataka, and proceedings shall be in English.
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first written above.
+
+For Zenith Technologies Private Limited
+Authorized Signatory
+
+Aarav Sharma
+Employee

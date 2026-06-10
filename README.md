@@ -1,51 +1,97 @@
-# vibe-coding-hackathon-2026-codenova
-Hackathon team repository for CodeNova - [hackindia-team:vibe-coding-hackathon-2026:codenova]
-Here's your problem statement, ready to submit:
+# NovaLens - AI Legal Intelligence Platform (Indian Law Edition)
+
+NovaLens is a premium, production-ready AI Legal Intelligence Platform that helps ordinary people audit and demystify complex legal contracts and agreements before signing. 
+
+The application is tailored specifically to evaluate terms, liabilities, and obligations under the **Indian Constitution and Indian statutes** (e.g., the Indian Contract Act, 1872, RERA, Information Technology Act, 2000, and state Rent Control acts).
 
 ---
 
-## 🎯 Problem Statement — Scout
+## 🚀 Key Product Features
 
-**Track:** 🚀 Startup Prototype
-
----
-
-### The Problem
-
-India has over 63 million small businesses — restaurants, salons, clinics, coaching centres, and local shops. Every day, they compete against each other and against organised chains, completely blind.
-
-A Starbucks store manager receives a weekly intelligence report: which competitors opened nearby, what customers are complaining about, what offers are working, and where the pricing gaps are. A local café owner gets nothing.
-
-The tools that exist for competitive intelligence — SEMrush, Crayon, Klue — are built for digital-first companies tracking website traffic and online ads. They cost lakhs per year, require technical teams, and are completely useless for a restaurant owner who just wants to know why the biryani place 200 metres away suddenly has a 5-star rating.
-
-The result: small business owners make critical pricing, menu, and marketing decisions based on gut feel — while quietly losing customers to competitors they don't understand.
+1. **AI Legal Verdict (Safe, Caution, High Risk, Avoid)**: Prominent risk indicator categorizing contracts with clear legal reasoning.
+2. **Layman's Simple Summary**: Explains legal terminology in plain-English paragraphs.
+3. **Circular Risk Gauge & Bulleted Risk Factors**: Displays risk percentages alongside list details explaining why scores were assigned.
+4. **Indian Statutory Citations**: Links audited clauses directly to specific legal sections (e.g., *Section 27 of the Indian Contract Act for restraint of trade*).
+5. **Two-Column Responsibilities breakdown**: Splits obligations ("Your Responsibilities" vs "Other Party's Obligations").
+6. **Financial Fees & Penalties ledger**: Tabulates deposits, delay interests, or cancelation costs.
+7. **Signature Protections Auditor (Signature Feature)**: Audits contracts for missing safety nets (like missing liability caps or force majeure clauses) and provides copyable drafted text compliant with Indian law.
+8. **Risk Timelines**: Chronological roadmap of risks during, at renewal, at termination, and after the contract's term.
+9. **Built-in OCR (Tesseract.js)**: Runs client-side text scans of PNG/JPG contract images in real time with progress trackers.
+10. **Zero-Config Sandbox & Judge Demo Mode**: Evaluates documents out of the box using `localStorage` and a local matching rules engine, providing immediate testing without any setup.
 
 ---
 
-### Our Solution — Scout
+## 🛠 Tech Stack
 
-Scout is an AI-powered weekly competitive intelligence platform built specifically for Indian SMBs.
-
-A business owner registers in 2 minutes. Scout automatically identifies their nearest competitors, monitors their ratings, reviews, pricing, and customer complaints across Google Maps and Zomato — and every week delivers one plain-English action:
-
-> *"Paradise Biryani dropped from 4.2 to 3.8 stars this month. 60% of recent complaints mention cold food. This week: promote your 'served fresh and hot' guarantee on your Zomato listing."*
-
-No dashboards to learn. No data to manually collect. Just one weekly insight that helps them win.
+- **Framework**: Next.js 14+ (App Router, Tailwind CSS v4, TypeScript, React 19)
+- **Database & Auth**: Supabase REST + Supabase Auth
+- **AI Processing**: OpenAI / OpenAI-compatible API endpoints
+- **Document Processing**: Tesseract.js (OCR), mammoth (DOCX text), pdf-parse (PDF text)
+- **Visuals**: Lucide Icons, Custom animated SVG Speedometers, CSS Timelines, glassmorphism templates
 
 ---
 
-### Why This Is Only Possible With AI
+## 📂 Project Structure
 
-Manually tracking 5 competitors across multiple platforms, reading hundreds of reviews, identifying patterns, and translating them into strategy takes 4+ hours every week — time a small business owner simply does not have. Scout compresses that into 30 seconds using the Google Places API for real live data and Claude for intelligent analysis. This is not a ChatGPT wrapper — the value is automated real-world data collection combined with AI-generated action recommendations.
+```text
+novalens/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx         # Responsive navbar, banner, & footer shell
+│   │   ├── page.tsx           # Premium SaaS Landing Page with FAQs & interactive preview
+│   │   ├── dashboard/         # Stat metrics and report logs
+│   │   ├── analyze/           # Dropzone, category selector, & OCR progress bars
+│   │   ├── reports/
+│   │   │   └── [id]/          # Audit dashboard (Speedometers, timelines, tabs)
+│   │   └── api/
+│   │       └── analyze/       # Server-side parsing & structured AI prompts
+│   ├── components/
+│   │   └── Layout/            # Responsive Navbar, Alert banners, and Footers
+│   ├── lib/
+│   │   ├── ocr.ts             # Client-side Tesseract.js worker
+│   │   ├── supabase.ts        # Client config with transparent local storage fallback
+│   │   └── mockData.ts        # Realistically drafted Indian legal analysis sets
+│   └── types/
+│       └── index.ts           # Typescript schemas
+├── .env.example               # Environment variables template
+└── package.json
+```
 
 ---
 
-### Target Market
+## ⚙️ Running Locally
 
-Organised Indian SMBs: restaurant chains of 2–5 outlets, salon franchises, coaching institutes, and clinics — businesses with enough revenue to pay for intelligence and enough competition to need it.
+Follow these quick commands to test the application:
+
+1. **Set Active Workspace**:
+   Instruct your editor/terminal to target the project directory:
+   ```bash
+   cd C:\Users\shria\.gemini\antigravity\scratch\novalens
+   ```
+
+2. **Verify Dependencies**:
+   Ensure all packages are installed:
+   ```bash
+   npm install
+   ```
+
+3. **Run Development Server**:
+   Start the Next.js development server:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+4. **Launch Demo Mode**:
+   - Go to the **Landing Page** and click **View Demo** to see an interactive mock evaluation.
+   - Go to the **Dashboard** and click **Pre-Load Demo Data** (or click presets on the upload page) to instantly populate your dashboard with Indian legal reports.
 
 ---
 
-### Business Model
+## 🔗 Connecting Live Credentials (Optional)
 
-Freemium. Free tier for a one-time competitor snapshot. Paid at ₹499/month for weekly automated reports on up to 10 competitors. API costs per business are under ₹50/month — strong margins from day one.
+To connect the application to your cloud infrastructure:
+
+1. Duplicate `.env.example` to `.env.local` inside `novalens/`.
+2. To hook up the database: Create a Supabase project, initialize an `agreements` table matching the schema, and copy the Project URL and Anon Key.
+3. To hook up live AI: Enter your `OPENAI_API_KEY`. You can also target alternative models or local LLM bases by adjusting the URL.
