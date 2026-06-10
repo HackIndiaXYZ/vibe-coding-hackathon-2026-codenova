@@ -128,11 +128,6 @@ Supports:
 * PNG
 
 using integrated OCR technology.
-
-### Demo Mode
-
-Built-in local evaluation system allowing judges to test the platform instantly without configuration.
-
 ---
 
 ## Technology Stack
@@ -186,7 +181,7 @@ Risk Assessment Engine
 ↓
 Interactive Legal Report
 
----
+
 ## 📂 Project Structure
 
 ```text
@@ -217,18 +212,6 @@ novalens/
 No login required.
 
 Use the built-in Demo Mode to instantly test the platform.
-
----
-
-## Judge Quick Start
-
-1. Open the application.
-2. Click "View Demo".
-3. Load sample contract data.
-4. Review generated legal analysis.
-5. Explore risk scores, timelines, and statutory citations.
-
-No setup required.
 
 ---
 
