@@ -6,6 +6,9 @@ NovaLens is an AI-powered legal intelligence platform designed to help individua
 
 Instead of reading pages of legal jargon, users can upload a contract and instantly receive a structured legal audit based on Indian laws, including risk assessments, statutory references, financial obligations, and actionable recommendations.
 <img width="2873" height="1616" alt="image" src="https://github.com/user-attachments/assets/294f610f-efd5-4044-875e-e4cfa0169e38" />
+<img width="2879" height="1613" alt="image" src="https://github.com/user-attachments/assets/e0d38d63-e304-4f37-afb2-c7aad0ce96ab" />
+<img width="2879" height="1598" alt="image" src="https://github.com/user-attachments/assets/16f97d0a-3904-4a4a-a24b-f4096438d6da" />
+
 
 ---
 
