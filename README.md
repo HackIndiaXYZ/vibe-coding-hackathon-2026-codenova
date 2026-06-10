@@ -1,36 +1,188 @@
-# NovaLens - AI Legal Intelligence Platform (Indian Law Edition)
+# NovaLens – AI Legal Intelligence Platform 🇮🇳
 
-NovaLens is a premium, production-ready AI Legal Intelligence Platform that helps ordinary people audit and demystify complex legal contracts and agreements before signing. 
+## Transform Complex Contracts into Clear Legal Insights
 
-The application is tailored specifically to evaluate terms, liabilities, and obligations under the **Indian Constitution and Indian statutes** (e.g., the Indian Contract Act, 1872, RERA, Information Technology Act, 2000, and state Rent Control acts).
+NovaLens is an AI-powered legal intelligence platform designed to help individuals, tenants, freelancers, employees, startup founders, and consumers understand legal agreements before signing them.
 
----
-
-## 🚀 Key Product Features
-
-1. **AI Legal Verdict (Safe, Caution, High Risk, Avoid)**: Prominent risk indicator categorizing contracts with clear legal reasoning.
-2. **Layman's Simple Summary**: Explains legal terminology in plain-English paragraphs.
-3. **Circular Risk Gauge & Bulleted Risk Factors**: Displays risk percentages alongside list details explaining why scores were assigned.
-4. **Indian Statutory Citations**: Links audited clauses directly to specific legal sections (e.g., *Section 27 of the Indian Contract Act for restraint of trade*).
-5. **Two-Column Responsibilities breakdown**: Splits obligations ("Your Responsibilities" vs "Other Party's Obligations").
-6. **Financial Fees & Penalties ledger**: Tabulates deposits, delay interests, or cancelation costs.
-7. **Signature Protections Auditor (Signature Feature)**: Audits contracts for missing safety nets (like missing liability caps or force majeure clauses) and provides copyable drafted text compliant with Indian law.
-8. **Risk Timelines**: Chronological roadmap of risks during, at renewal, at termination, and after the contract's term.
-9. **Built-in OCR (Tesseract.js)**: Runs client-side text scans of PNG/JPG contract images in real time with progress trackers.
-10. **Zero-Config Sandbox & Judge Demo Mode**: Evaluates documents out of the box using `localStorage` and a local matching rules engine, providing immediate testing without any setup.
+Instead of reading pages of legal jargon, users can upload a contract and instantly receive a structured legal audit based on Indian laws, including risk assessments, statutory references, financial obligations, and actionable recommendations.
 
 ---
 
-## 🛠 Tech Stack
+## Problem Statement
 
-- **Framework**: Next.js 14+ (App Router, Tailwind CSS v4, TypeScript, React 19)
-- **Database & Auth**: Supabase REST + Supabase Auth
-- **AI Processing**: OpenAI / OpenAI-compatible API endpoints
-- **Document Processing**: Tesseract.js (OCR), mammoth (DOCX text), pdf-parse (PDF text)
-- **Visuals**: Lucide Icons, Custom animated SVG Speedometers, CSS Timelines, glassmorphism templates
+Most people sign contracts without fully understanding:
+
+* Hidden liabilities
+* Unfair clauses
+* Financial penalties
+* Renewal traps
+* Legal obligations
+* Missing legal protections
+
+Legal consultation is often expensive, inaccessible, or time-consuming.
+
+NovaLens bridges this gap by providing instant AI-powered contract analysis tailored for Indian legal frameworks.
 
 ---
 
+## Solution
+
+NovaLens analyzes contracts and generates an easy-to-understand legal report that includes:
+
+* Contract Risk Score
+* Plain-English Summary
+* Clause-by-Clause Legal Analysis
+* Indian Statutory References
+* Financial Obligations Breakdown
+* Responsibility Mapping
+* Missing Protection Detection
+* Risk Timeline Visualization
+
+The platform helps users make informed decisions before signing important agreements.
+
+---
+
+## Key Features
+
+### AI Legal Verdict Engine
+
+Provides an overall legal verdict:
+
+* Safe
+* Caution
+* High Risk
+* Avoid
+
+with detailed reasoning.
+
+### Plain-English Contract Summary
+
+Transforms legal jargon into simple, understandable explanations.
+
+### Circular Risk Gauge
+
+Visual representation of overall contract risk percentage.
+
+### Risk Factor Analysis
+
+Highlights problematic clauses and explains why they may be risky.
+
+### Indian Law Citation Engine
+
+Maps clauses to applicable legal provisions, including:
+
+* Indian Contract Act, 1872
+* Information Technology Act, 2000
+* RERA Guidelines
+* State Rent Control Regulations
+
+### Responsibilities Matrix
+
+Clearly separates:
+
+* Your Responsibilities
+* Other Party Responsibilities
+
+### Financial Obligations Dashboard
+
+Tracks:
+
+* Deposits
+* Fees
+* Penalties
+* Interest Charges
+* Cancellation Costs
+
+### Signature Protection Auditor
+
+Identifies missing safeguards such as:
+
+* Liability Caps
+* Force Majeure Clauses
+* Termination Protections
+* Indemnity Balancing
+
+and suggests legally structured replacement language.
+
+### Contract Risk Timeline
+
+Visualizes legal risks across:
+
+* Contract Start
+* Active Period
+* Renewal
+* Termination
+* Post-Term Obligations
+
+### OCR Document Processing
+
+Supports:
+
+* PDF
+* DOCX
+* JPG
+* PNG
+
+using integrated OCR technology.
+
+### Demo Mode
+
+Built-in local evaluation system allowing judges to test the platform instantly without configuration.
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Next.js 14+
+* React 19
+* TypeScript
+* Tailwind CSS v4
+
+### Backend
+
+* Next.js API Routes
+* OpenAI-Compatible APIs
+
+### Database & Authentication
+
+* Supabase
+* Supabase Auth
+
+### Document Processing
+
+* Tesseract.js
+* pdf-parse
+* mammoth
+
+### UI Components
+
+* Lucide Icons
+* Custom SVG Visualizations
+* Interactive Timelines
+* Glassmorphism Design System
+
+---
+
+
+## Architecture
+
+User Upload
+↓
+Document Extraction
+↓
+OCR / Parsing Engine
+↓
+AI Legal Analysis
+↓
+Indian Law Mapping
+↓
+Risk Assessment Engine
+↓
+Interactive Legal Report
+
+---
 ## 📂 Project Structure
 
 ```text
@@ -56,42 +208,67 @@ novalens/
 ├── .env.example               # Environment variables template
 └── package.json
 ```
+## Demo Credentials
+
+No login required.
+
+Use the built-in Demo Mode to instantly test the platform.
 
 ---
 
-## ⚙️ Running Locally
+## Judge Quick Start
 
-Follow these quick commands to test the application:
+1. Open the application.
+2. Click "View Demo".
+3. Load sample contract data.
+4. Review generated legal analysis.
+5. Explore risk scores, timelines, and statutory citations.
 
-1. **Set Active Workspace**:
-   Instruct your editor/terminal to target the project directory:
-   ```bash
-   cd C:\Users\shria\.gemini\antigravity\scratch\novalens
-   ```
-
-2. **Verify Dependencies**:
-   Ensure all packages are installed:
-   ```bash
-   npm install
-   ```
-
-3. **Run Development Server**:
-   Start the Next.js development server:
-   ```bash
-   npm run dev
-   ```
-   Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
-
-4. **Launch Demo Mode**:
-   - Go to the **Landing Page** and click **View Demo** to see an interactive mock evaluation.
-   - Go to the **Dashboard** and click **Pre-Load Demo Data** (or click presets on the upload page) to instantly populate your dashboard with Indian legal reports.
+No setup required.
 
 ---
 
-## 🔗 Connecting Live Credentials (Optional)
+## Innovation Highlights
 
-To connect the application to your cloud infrastructure:
+* Indian-law-specific legal intelligence
+* AI-generated legal explanations for non-lawyers
+* Missing-clause protection auditing
+* Interactive risk timeline visualization
+* OCR-powered document ingestion
+* Zero-configuration demo environment
 
-1. Duplicate `.env.example` to `.env.local` inside `novalens/`.
-2. To hook up the database: Create a Supabase project, initialize an `agreements` table matching the schema, and copy the Project URL and Anon Key.
-3. To hook up live AI: Enter your `OPENAI_API_KEY`. You can also target alternative models or local LLM bases by adjusting the URL.
+---
+
+## Future Scope
+
+* Multilingual Legal Analysis
+* E-Sign Verification
+* Legal Compliance Monitoring
+* Contract Comparison Engine
+* Enterprise Contract Management
+* Lawyer Review Marketplace
+
+---
+
+## Impact
+
+NovaLens empowers everyday people to understand legal agreements before committing to them, reducing legal risk and improving access to legal knowledge.
+
+---
+
+## Team
+
+Team Name: NovaLens
+
+HackIndia Vibe Coding Hackathon 2026
+
+Built using AI-first development principles and modern legal intelligence workflows.
+
+---
+
+## Demo Video
+https://drive.google.com/file/d/1Nj-USZdgdzPZAjAHWlGj2nZZ9P3lCSFw/view?usp=sharing
+
+
+
+
